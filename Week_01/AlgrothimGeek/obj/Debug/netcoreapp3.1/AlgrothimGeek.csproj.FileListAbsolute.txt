@@ -1,0 +1,13 @@
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\bin\Debug\netcoreapp3.1\AlgrothimGeek.exe
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\bin\Debug\netcoreapp3.1\AlgrothimGeek.deps.json
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\bin\Debug\netcoreapp3.1\AlgrothimGeek.runtimeconfig.json
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\bin\Debug\netcoreapp3.1\AlgrothimGeek.runtimeconfig.dev.json
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\bin\Debug\netcoreapp3.1\AlgrothimGeek.dll
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\bin\Debug\netcoreapp3.1\AlgrothimGeek.pdb
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.csprojAssemblyReference.cache
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.AssemblyInfoInputs.cache
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.AssemblyInfo.cs
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.csproj.CoreCompileInputs.cache
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.dll
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.pdb
+D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_01\AlgrothimGeek\obj\Debug\netcoreapp3.1\AlgrothimGeek.genruntimeconfig.cache
