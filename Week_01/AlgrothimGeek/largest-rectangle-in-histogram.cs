@@ -71,16 +71,13 @@ namespace AlgrothimGeek {
             int maxArea = 0;
             int width = 0;
             int[] newHeights = new int[len + 2];
-            for (int i = 0; i < len; i++) {
-                newHeights[i + 1] = heights[i];
-            }
+            Array.Copy (heights, 0, newHeights, 1, heights.Length);
             len = len + 2;
-            heights = newHeights;
             Stack<int> stack = new Stack<int> ();
             stack.Push (0);
             for (int i = 1; i < len; i++) {
-                while (heights[stack.Peek ()] > heights[i]) {
-                    int height = heights[stack.Pop ()];
+                while (newHeights[stack.Peek ()] > newHeights[i]) {
+                    int height = newHeights[stack.Pop ()];
                     width = i - stack.Peek () - 1;
                     maxArea = Math.Max (height * width, maxArea);
                 }
