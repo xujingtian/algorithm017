@@ -81,17 +81,25 @@
 
 ### 2.5  练习题目
 
-/*move zeros 移动零 https://leetcode-cn.com/problems/move-zeroes/ <br/>
-     最优解：双指针，找到非0元素，与最近为0的元素交换位置 O(n) O(1) <br/>
-     双循环：外层循环判断0值，与内层循环非0值交换值 O(n^2) <br/>
-*/
+#### 2.5.1 move zeros 移动零
 
-/*container-with-most-water 盛水最多的容器 https://leetcode-cn.com/problems/container-with-most-water/ <br/>
+ https://leetcode-cn.com/problems/move-zeroes/ <br/>
+
+​     最优解：双指针，找到非0元素，与最近为0的元素交换位置 O(n) O(1) <br/>
+     双循环：外层循环判断0值，与内层循环非0值交换值 O(n^2) <br/>
+
+
+#### 2.5.2 container-with-most-water 盛水最多的容器
+
+ https://leetcode-cn.com/problems/container-with-most-water/ <br/>
      最优解：双指针，定义初始、结束索引，计算area,并比较对应元素值，将元素值较小的索引前移/后移 O(n) O(1) <br/>
      双循环：循环计算，O(n^2) <br/>
 
-*/
-/*climbing-stairs 爬楼梯 https://leetcode.com/problems/climbing-stairs <br/>
+
+
+#### 2.5.3 climbing-stairs 爬楼梯 
+
+https://leetcode.com/problems/climbing-stairs <br/>
         Fibonacci <br/>
          这个解法其实挺烧脑的，我一点不觉得是简单级别 <br/>
          其实整个楼梯，从n=3 才能正常套用 f(n)=f(n-1)+f(n-2) <br/>
@@ -101,4 +109,37 @@
           ，二步爬上来的爬法，初始值应该对应爬1级台阶的方法，可知为1 <br/>
           每次向上收敛，则n对应的节点变为（n+1节点）一步跨上来的爬法，<br/>
           原对应n的一步爬上来的节点，变为（n+1节点）二步爬上来的爬法 <br/>
-*/
+
+#### 2.5.4 3sum 三数之和
+
+https://leetcode-cn.com/problems/3sum
+
+给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。
+
+注意：答案中不可以包含重复的三元组。
+
+- 审题：
+
+  返回不会重复的三元组，要去重，顺序不同也视为重复	
+
+  可能不存在
+
+  a+b=-c
+
+- 思路：
+
+  暴力：三重循环，去重问题？
+
+  
+
+
+
+- 反馈：
+
+
+
+- 问题：
+
+
+
+疑问:

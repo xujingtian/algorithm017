@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AlgrothimGeek {
     class Program {
         static void Main (string[] args) {
             Console.WriteLine ("Hello World!");
+            Solution20 tt = new Solution20 ();
+            tt.IsValid ("()[]{}");
         }
 
         #region move-zeroes
@@ -190,6 +193,147 @@ namespace AlgrothimGeek {
                 f2 = f3;
             }
             return f3;
+        }
+        #endregion
+        #region 3sum 三数之和
+        public static IList<IList<int>> ThreeSum (int[] nums) {
+            //o(n^3) o(1)
+            Array.Sort (nums);
+            int sizes = nums.Length;
+            IList<IList<int>> listAll = new List<IList<int>> (sizes / 3);
+            List<string> listCompare = new List<string> (sizes / 3);
+            string joins = string.Empty;
+            for (int i = 0; i < sizes - 2; i++) {
+                for (int j = i + 1; j < sizes - 1; j++) {
+                    for (int k = j + 1; k < sizes; k++) {
+                        if (nums[i] + nums[j] + nums[k] == 0) {
+                            List<int> listData = new List<int> (3);
+                            listData.Add (nums[i]);
+                            listData.Add (nums[j]);
+                            listData.Add (nums[k]);
+                            joins = string.Join (",", listData);
+                            if (!listCompare.Contains (joins)) {
+                                listCompare.Add (joins);
+                                listAll.Add (listData);
+                            }
+                        }
+                    }
+                }
+
+            }
+            return listAll;
+        }
+
+        public IList<IList<int>> ThreeSum2 (int[] nums) {
+            //o(n^3) o(1)
+            Array.Sort (nums);
+            int sizes = nums.Length;
+            IList<IList<int>> listAll = new List<IList<int>> (sizes / 3);
+            List<string> listCompare = new List<string> (sizes / 3);
+
+            string joins = string.Empty;
+            for (int i = 0; i < sizes - 2; i++) {
+                if (i != 0 && nums[i] == nums[i - 1]) continue;
+                for (int j = i + 1; j < sizes - 1; j++) {
+                    if (j != i + 1 && nums[j] == nums[j - 1]) continue;
+                    for (int k = j + 1; k < sizes; k++) {
+                        if (k != j + 1 && nums[k] == nums[k - 1]) continue;
+                        if (nums[i] + nums[j] + nums[k] == 0) {
+                            List<int> listData = new List<int> (3);
+                            listData.Add (nums[i]);
+                            listData.Add (nums[j]);
+                            listData.Add (nums[k]);
+                            listAll.Add (listData);
+                        }
+                    }
+                }
+
+            }
+            return listAll;
+        }
+
+        public IList<IList<int>> ThreeSum3 (int[] nums) {
+            //o(n^3) o(n)
+            Array.Sort (nums);
+            int sizes = nums.Length;
+            IList<IList<int>> listAll = new List<IList<int>> (sizes / 3);
+            int need = -1;
+            int lo = -1;
+            int hi = -1;
+            int mid = -1;
+            for (int i = 0; i < sizes - 2; i++) {
+                if (i != 0 && nums[i] == nums[i - 1]) continue;
+                for (int j = i + 1; j < sizes - 1; j++) {
+                    if (j != i + 1 && nums[j] == nums[j - 1]) continue;
+                    need = 0 - nums[i] - nums[j];
+                    lo = j + 1;
+                    hi = nums.Length - 1;
+                    while (lo <= hi) {
+                        mid = (lo + hi) / 2; // ((hi - lo) >> 1) + lo;
+                        if (nums[mid] == need) {
+                            listAll.Add (new List<int> { nums[i], nums[j], nums[mid] });
+                            break;
+                        } else if (nums[mid] < need) {
+                            lo = mid + 1;
+                        } else if (nums[mid] > need) {
+                            hi = mid - 1;
+                        }
+                    }
+                }
+
+            }
+            return listAll;
+        }
+
+        public static IList<IList<int>> ThreeSum4 (int[] nums) {
+            //o(n^2) o(n)
+            int sizes = nums.Length;
+            Array.Sort (nums);
+            IList<IList<int>> listAll = new List<IList<int>> (sizes / 3);
+            for (int i = 0; i < sizes - 2; i++) {
+                if (i > 0 && nums[i] == nums[i - 1])
+                    continue;
+                int k = sizes - 1;
+                for (int j = i + 1; j < sizes - 1; j++) {
+                    if (j > i + 1 && nums[j] == nums[j - 1])
+                        continue;
+                    while (j < k && nums[j] + nums[k] + nums[i] > 0) {
+                        --k;
+                    }
+                    if (j == k)
+                        break;
+                    if (nums[j] + nums[k] + nums[i] == 0) {
+                        List<int> listData = new List<int> (3);
+                        listData.Add (nums[i]);
+                        listData.Add (nums[j]);
+                        listData.Add (nums[k]);
+                        listAll.Add (listData);
+                    }
+                }
+            }
+            return listAll;
+
+        }
+        public class ListContains<T> : List<int> {
+            public ListContains (int capcity) : base (capcity) {
+
+            }
+            public override bool Equals (object obj) {
+                if (obj.GetType () == typeof (List<int>)) {
+                    int counts = this.Count;
+                    for (int i = 0; i < counts; i++) {
+                        if ((int) this [i] != ((List<int>) obj) [i]) {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                return base.Equals (obj);
+            }
+
+            public override int GetHashCode () {
+                return base.GetHashCode ();
+            }
         }
         #endregion
     }
