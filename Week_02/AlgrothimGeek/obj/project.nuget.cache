@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "34oqUdPanzhlFj3y/eLxPNSdBOiKRjNY4wofbrehXz4sR8o6mzgqxFTtNd5lEaHUnJTk0kIbWnU1p033vcrYLA==",
+  "success": true,
+  "projectFilePath": "D:\\99.dean_pc\\08.geektime\\03.算法训练营_正式\\algrothimcode\\algorithm017\\Week_02\\AlgrothimGeek\\AlgrothimGeek.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xujin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512",
+    "C:\\Users\\xujin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.2\\microsoft.netcore.app.host.win-x64.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
