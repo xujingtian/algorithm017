@@ -115,6 +115,8 @@ private static int SerarchTraverIndex (int[] nums) {
 
 麻烦助教老师看下，这么算对不对，或者是有没有更好的办法来计算
 
+![avatar] (https://github.com/xujingtian/algorithm017/blob/master/Week_04/pics/image-20201025220945493.png)
 
+![image-2020102522094549](https://github.com/xujingtian/algorithm017/blob/master/Week_04/pics/image-20201025220945493.png)
 
-![image-20201025220945493](D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_04\pics\image-20201025220945493.png)
+![本地备份](D:\99.dean_pc\08.geektime\03.算法训练营_正式\algrothimcode\algorithm017\Week_04\pics\image-20201025220945493.png)
